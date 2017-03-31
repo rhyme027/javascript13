@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>表单（三）联动</title>
+		<style>
+			#social_group {display: none;}
+			#schoolList {display: inline-block;}
+			#beijing{display: none;}
+		</style>
+	</head>
+	<body>
+		<div>
+			<input type="radio" checked="checked" id="internal" name="student" />
+			<label for="internal">在校生</label>
+			<input type="radio" id="social" name="student" />
+			<label for="social">非在校生</label>
+		</div>
+		<div>
+			<div id="internal_group">
+				<label for="city">学校</label>
+				<select id="city">
+					<option value="hunan">湖南</option>
+					<option value="beijing">北京</option>
+				</select>
+				<div id="schoolList">
+					<select id="hunan">
+						<option value="湖南人文科技学院">湖南人文科技学院</option>
+						<option value="怀化学院">怀化学院</option>
+						<option value="湖南学校1">湖南学校1</option>
+					</select>
+					<select id="beijing">
+						<option value="清华大学">清华大学</option>
+						<option value="北京大学">北京大学</option>
+						<option value="北京学校1">北京学校1</option>
+						<option value="北京学校2">北京学校2</option>
+					</select>
+				</div>
+			</div>
+			<div id="social_group">
+				<label for="company">就业单位</label>
+				<input type="text" placeholder="请输入就业单位" />
+			</div>
+		</div>
+		<script src="js/index.js"></script>
+	</body>
+</html>
